@@ -17,6 +17,8 @@
 		E54FB9492747E3E7001ECEA2 /* CarfaxInterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FB9482747E3E7001ECEA2 /* CarfaxInterviewTests.swift */; };
 		E54FB9532747E3E7001ECEA2 /* CarfaxInterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FB9522747E3E7001ECEA2 /* CarfaxInterviewUITests.swift */; };
 		E54FB9552747E3E7001ECEA2 /* CarfaxInterviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FB9542747E3E7001ECEA2 /* CarfaxInterviewUITestsLaunchTests.swift */; };
+		E54FB9632747E7FE001ECEA2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FB9612747E7FE001ECEA2 /* CollectionViewCell.swift */; };
+		E54FB9642747E7FE001ECEA2 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E54FB9622747E7FE001ECEA2 /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		E54FB94E2747E3E7001ECEA2 /* CarfaxInterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarfaxInterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E54FB9522747E3E7001ECEA2 /* CarfaxInterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarfaxInterviewUITests.swift; sourceTree = "<group>"; };
 		E54FB9542747E3E7001ECEA2 /* CarfaxInterviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarfaxInterviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E54FB9612747E7FE001ECEA2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E54FB9622747E7FE001ECEA2 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				E54FB92E2747E3E4001ECEA2 /* AppDelegate.swift */,
 				E54FB9302747E3E4001ECEA2 /* SceneDelegate.swift */,
 				E54FB9322747E3E4001ECEA2 /* ViewController.swift */,
+				E54FB9612747E7FE001ECEA2 /* CollectionViewCell.swift */,
+				E54FB9622747E7FE001ECEA2 /* CollectionViewCell.xib */,
 				E54FB9342747E3E4001ECEA2 /* Main.storyboard */,
 				E54FB93A2747E3E7001ECEA2 /* Assets.xcassets */,
 				E54FB93C2747E3E7001ECEA2 /* LaunchScreen.storyboard */,
@@ -236,6 +242,7 @@
 			files = (
 				E54FB93E2747E3E7001ECEA2 /* LaunchScreen.storyboard in Resources */,
 				E54FB93B2747E3E7001ECEA2 /* Assets.xcassets in Resources */,
+				E54FB9642747E7FE001ECEA2 /* CollectionViewCell.xib in Resources */,
 				E54FB9362747E3E4001ECEA2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E54FB9632747E7FE001ECEA2 /* CollectionViewCell.swift in Sources */,
 				E54FB9332747E3E4001ECEA2 /* ViewController.swift in Sources */,
 				E54FB92F2747E3E4001ECEA2 /* AppDelegate.swift in Sources */,
 				E54FB9392747E3E4001ECEA2 /* CarfaxInterview.xcdatamodeld in Sources */,
