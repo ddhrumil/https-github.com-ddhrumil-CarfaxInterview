@@ -9,6 +9,8 @@ import UIKit
 
 
 class CollectionViewCell: UICollectionViewCell {
+    
+    //Outlets for respective data
 
     @IBOutlet weak var imageOutlet: UIImageView!
     @IBOutlet weak var yearOutlet: UILabel!
@@ -28,9 +30,10 @@ class CollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
     
+    //Code for calling the dealer
     @IBAction func CallDealer(_ sender: Any) {
         if let url = URL(string: "tel://\(phoneOutlet.text!)"),
         UIApplication.shared.canOpenURL(url) {

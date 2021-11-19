@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 extension UIImageView {
     func downloaded(from url: URL, contentMode mode: ContentMode = .scaleAspectFit) {
         contentMode = mode
@@ -22,16 +23,20 @@ extension UIImageView {
             }
         }.resume()
     }
+    
     func downloaded(from link: String, contentMode mode: ContentMode = .scaleAspectFit) {
         guard let url = URL(string: link) else { return }
         downloaded(from: url, contentMode: mode)
     }
+    
 }
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
+    //Collection view outlet
     @IBOutlet weak var collectionView: UICollectionView!
     
+    //Varible for Api data
     var listings: Array<Dictionary<String,Any>> = []
     
     override func viewDidLoad() {
@@ -41,9 +46,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         collectionView.delegate = self
         collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "customCell")
         
+        //Api url
         let jsonString = "https://carfax-for-consumers.firebaseio.com/assignment.json"
         guard let url = URL(string: jsonString) else { return }
         
+        //Getting data from api
         let session = URLSession.shared.dataTask(with: url) { data, response, error in
             if let httpResponse = response as? HTTPURLResponse {
                 if(httpResponse.statusCode != 200) {
@@ -51,12 +58,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                 }
             }
             
+            //Serializing data from api through JSONSerialization
             if let myData = data {
                 if let json = try? (JSONSerialization.jsonObject(with: myData, options: []) as! Dictionary<String,Any>) {
                     if let myListings = json["listings"] as? Array<Dictionary<String,Any>> {
                         self.listings = myListings
                         DispatchQueue.main.sync {
-                            print(self.listings)
+                            //print(self.listings)
                             self.collectionView.reloadData()
                         }
                     }
@@ -66,14 +74,17 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         session.resume()
     }
     
+    //Mandatory Collection View functions to display data
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.listings.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let row = listings[indexPath.row]
-        //print(row)
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath) as! CollectionViewCell
+        
+        //Displaying data to respective labels
         if let make = row["make"] as? String {
             cell.makeOutlet.text = make
         }
@@ -108,11 +119,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             
         }
         
+        //Fetching image urls and displaying to image view
         if let images = row["images"] as? Dictionary<String,Any> {
             print(images)
 
             if let firstPhoto = images["firstPhoto"] as? Dictionary<String,Any> {
-                let finalImgUrl = firstPhoto["large"] as? String            
+                let finalImgUrl = firstPhoto["large"] as? String
                 cell.imageOutlet.downloaded(from: finalImgUrl ?? "")
                 cell.imageOutlet.contentMode = .scaleAspectFill
             }
@@ -120,6 +132,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return cell
     }
     
+    //function for resizing cell width and cell height
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = collectionView.frame.size.width
         let cellHeight = collectionView.frame.size.height
