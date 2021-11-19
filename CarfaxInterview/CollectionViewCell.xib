@@ -28,7 +28,14 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9X0-Dp-VlW">
-                        <rect key="frame" x="77" y="131" width="42" height="21"/>
+                        <rect key="frame" x="71" y="132" width="42" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzy-XN-fDW">
+                        <rect key="frame" x="203" y="162" width="42" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -69,18 +76,31 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzy-XN-fDW">
-                        <rect key="frame" x="203" y="162" width="42" height="21"/>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4c-rh-F6k">
+                        <rect key="frame" x="109" y="192" width="88" height="31"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Call"/>
+                        <connections>
+                            <action selector="CallDealer:" destination="gTV-IL-0wX" eventType="touchUpInside" id="4Jh-50-1fZ"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="294" height="358"/>
-            <point key="canvasLocation" x="168" y="85"/>
+            <connections>
+                <outlet property="imageOutlet" destination="l28-Yb-dnU" id="M5m-eJ-7Ml"/>
+                <outlet property="locationOutlet" destination="Foz-tG-vKz" id="jfv-BS-Iwj"/>
+                <outlet property="makeOutlet" destination="9X0-Dp-VlW" id="sWr-aZ-5QX"/>
+                <outlet property="mileageOutlet" destination="oZF-PJ-FiQ" id="kx2-MX-C2C"/>
+                <outlet property="modelOutlet" destination="xEh-ql-RdL" id="Qoz-BU-6za"/>
+                <outlet property="phoneOutlet" destination="wzy-XN-fDW" id="ufg-nH-6k9"/>
+                <outlet property="priceOutlet" destination="LhU-xZ-dol" id="Joi-tN-lJT"/>
+                <outlet property="trimOutlet" destination="3i5-gj-IXh" id="X8c-lg-zfj"/>
+                <outlet property="yearOutlet" destination="SsJ-CO-q04" id="Gq3-kE-Nb0"/>
+            </connections>
+            <point key="canvasLocation" x="166.66666666666669" y="84.375"/>
         </collectionViewCell>
         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W6S-ot-q7U">
             <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
