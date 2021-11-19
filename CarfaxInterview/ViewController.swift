@@ -7,6 +7,27 @@
 
 import UIKit
 
+extension UIImageView {
+    func downloaded(from url: URL, contentMode mode: ContentMode = .scaleAspectFit) {
+        contentMode = mode
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard
+                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+                let data = data, error == nil,
+                let image = UIImage(data: data)
+                else { return }
+            DispatchQueue.main.async() { [weak self] in
+                self?.image = image
+            }
+        }.resume()
+    }
+    func downloaded(from link: String, contentMode mode: ContentMode = .scaleAspectFit) {
+        guard let url = URL(string: link) else { return }
+        downloaded(from: url, contentMode: mode)
+    }
+}
+
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collectionView: UICollectionView!
@@ -85,6 +106,16 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             //print(cityLocation)
             cell.locationOutlet.text = (cityLocation ?? "") + ", " + (stateLocation ?? "")
             
+        }
+        
+        if let images = row["images"] as? Dictionary<String,Any> {
+            print(images)
+
+            if let firstPhoto = images["firstPhoto"] as? Dictionary<String,Any> {
+                let finalImgUrl = firstPhoto["large"] as? String            
+                cell.imageOutlet.downloaded(from: finalImgUrl ?? "")
+                cell.imageOutlet.contentMode = .scaleAspectFill
+            }
         }
         return cell
     }
