@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E54FB92F2747E3E4001ECEA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FB92E2747E3E4001ECEA2 /* AppDelegate.swift */; };
+		E54FB9312747E3E4001ECEA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FB9302747E3E4001ECEA2 /* SceneDelegate.swift */; };
+		E54FB9332747E3E4001ECEA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FB9322747E3E4001ECEA2 /* ViewController.swift */; };
+		E54FB9362747E3E4001ECEA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E54FB9342747E3E4001ECEA2 /* Main.storyboard */; };
+		E54FB9392747E3E4001ECEA2 /* CarfaxInterview.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E54FB9372747E3E4001ECEA2 /* CarfaxInterview.xcdatamodeld */; };
+		E54FB93B2747E3E7001ECEA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E54FB93A2747E3E7001ECEA2 /* Assets.xcassets */; };
+		E54FB93E2747E3E7001ECEA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E54FB93C2747E3E7001ECEA2 /* LaunchScreen.storyboard */; };
+		E54FB9492747E3E7001ECEA2 /* CarfaxInterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FB9482747E3E7001ECEA2 /* CarfaxInterviewTests.swift */; };
+		E54FB9532747E3E7001ECEA2 /* CarfaxInterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FB9522747E3E7001ECEA2 /* CarfaxInterviewUITests.swift */; };
+		E54FB9552747E3E7001ECEA2 /* CarfaxInterviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FB9542747E3E7001ECEA2 /* CarfaxInterviewUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E54FB9452747E3E7001ECEA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E54FB9232747E3E4001ECEA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E54FB92A2747E3E4001ECEA2;
+			remoteInfo = CarfaxInterview;
+		};
+		E54FB94F2747E3E7001ECEA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E54FB9232747E3E4001ECEA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E54FB92A2747E3E4001ECEA2;
+			remoteInfo = CarfaxInterview;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E54FB92B2747E3E4001ECEA2 /* CarfaxInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarfaxInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54FB92E2747E3E4001ECEA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E54FB9302747E3E4001ECEA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E54FB9322747E3E4001ECEA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E54FB9352747E3E4001ECEA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E54FB9382747E3E4001ECEA2 /* CarfaxInterview.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CarfaxInterview.xcdatamodel; sourceTree = "<group>"; };
+		E54FB93A2747E3E7001ECEA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E54FB93D2747E3E7001ECEA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E54FB93F2747E3E7001ECEA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E54FB9442747E3E7001ECEA2 /* CarfaxInterviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarfaxInterviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54FB9482747E3E7001ECEA2 /* CarfaxInterviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarfaxInterviewTests.swift; sourceTree = "<group>"; };
+		E54FB94E2747E3E7001ECEA2 /* CarfaxInterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarfaxInterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54FB9522747E3E7001ECEA2 /* CarfaxInterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarfaxInterviewUITests.swift; sourceTree = "<group>"; };
+		E54FB9542747E3E7001ECEA2 /* CarfaxInterviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarfaxInterviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E54FB9282747E3E4001ECEA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E54FB9412747E3E7001ECEA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E54FB94B2747E3E7001ECEA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E54FB9222747E3E4001ECEA2 = {
+			isa = PBXGroup;
+			children = (
+				E54FB92D2747E3E4001ECEA2 /* CarfaxInterview */,
+				E54FB9472747E3E7001ECEA2 /* CarfaxInterviewTests */,
+				E54FB9512747E3E7001ECEA2 /* CarfaxInterviewUITests */,
+				E54FB92C2747E3E4001ECEA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E54FB92C2747E3E4001ECEA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E54FB92B2747E3E4001ECEA2 /* CarfaxInterview.app */,
+				E54FB9442747E3E7001ECEA2 /* CarfaxInterviewTests.xctest */,
+				E54FB94E2747E3E7001ECEA2 /* CarfaxInterviewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E54FB92D2747E3E4001ECEA2 /* CarfaxInterview */ = {
+			isa = PBXGroup;
+			children = (
+				E54FB92E2747E3E4001ECEA2 /* AppDelegate.swift */,
+				E54FB9302747E3E4001ECEA2 /* SceneDelegate.swift */,
+				E54FB9322747E3E4001ECEA2 /* ViewController.swift */,
+				E54FB9342747E3E4001ECEA2 /* Main.storyboard */,
+				E54FB93A2747E3E7001ECEA2 /* Assets.xcassets */,
+				E54FB93C2747E3E7001ECEA2 /* LaunchScreen.storyboard */,
+				E54FB93F2747E3E7001ECEA2 /* Info.plist */,
+				E54FB9372747E3E4001ECEA2 /* CarfaxInterview.xcdatamodeld */,
+			);
+			path = CarfaxInterview;
+			sourceTree = "<group>";
+		};
+		E54FB9472747E3E7001ECEA2 /* CarfaxInterviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				E54FB9482747E3E7001ECEA2 /* CarfaxInterviewTests.swift */,
+			);
+			path = CarfaxInterviewTests;
+			sourceTree = "<group>";
+		};
+		E54FB9512747E3E7001ECEA2 /* CarfaxInterviewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E54FB9522747E3E7001ECEA2 /* CarfaxInterviewUITests.swift */,
+				E54FB9542747E3E7001ECEA2 /* CarfaxInterviewUITestsLaunchTests.swift */,
+			);
+			path = CarfaxInterviewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E54FB92A2747E3E4001ECEA2 /* CarfaxInterview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E54FB9582747E3E7001ECEA2 /* Build configuration list for PBXNativeTarget "CarfaxInterview" */;
+			buildPhases = (
+				E54FB9272747E3E4001ECEA2 /* Sources */,
+				E54FB9282747E3E4001ECEA2 /* Frameworks */,
+				E54FB9292747E3E4001ECEA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarfaxInterview;
+			productName = CarfaxInterview;
+			productReference = E54FB92B2747E3E4001ECEA2 /* CarfaxInterview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E54FB9432747E3E7001ECEA2 /* CarfaxInterviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E54FB95B2747E3E7001ECEA2 /* Build configuration list for PBXNativeTarget "CarfaxInterviewTests" */;
+			buildPhases = (
+				E54FB9402747E3E7001ECEA2 /* Sources */,
+				E54FB9412747E3E7001ECEA2 /* Frameworks */,
+				E54FB9422747E3E7001ECEA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E54FB9462747E3E7001ECEA2 /* PBXTargetDependency */,
+			);
+			name = CarfaxInterviewTests;
+			productName = CarfaxInterviewTests;
+			productReference = E54FB9442747E3E7001ECEA2 /* CarfaxInterviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E54FB94D2747E3E7001ECEA2 /* CarfaxInterviewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E54FB95E2747E3E7001ECEA2 /* Build configuration list for PBXNativeTarget "CarfaxInterviewUITests" */;
+			buildPhases = (
+				E54FB94A2747E3E7001ECEA2 /* Sources */,
+				E54FB94B2747E3E7001ECEA2 /* Frameworks */,
+				E54FB94C2747E3E7001ECEA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E54FB9502747E3E7001ECEA2 /* PBXTargetDependency */,
+			);
+			name = CarfaxInterviewUITests;
+			productName = CarfaxInterviewUITests;
+			productReference = E54FB94E2747E3E7001ECEA2 /* CarfaxInterviewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E54FB9232747E3E4001ECEA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					E54FB92A2747E3E4001ECEA2 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					E54FB9432747E3E7001ECEA2 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = E54FB92A2747E3E4001ECEA2;
+					};
+					E54FB94D2747E3E7001ECEA2 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = E54FB92A2747E3E4001ECEA2;
+					};
+				};
+			};
+			buildConfigurationList = E54FB9262747E3E4001ECEA2 /* Build configuration list for PBXProject "CarfaxInterview" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E54FB9222747E3E4001ECEA2;
+			productRefGroup = E54FB92C2747E3E4001ECEA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E54FB92A2747E3E4001ECEA2 /* CarfaxInterview */,
+				E54FB9432747E3E7001ECEA2 /* CarfaxInterviewTests */,
+				E54FB94D2747E3E7001ECEA2 /* CarfaxInterviewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E54FB9292747E3E4001ECEA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E54FB93E2747E3E7001ECEA2 /* LaunchScreen.storyboard in Resources */,
+				E54FB93B2747E3E7001ECEA2 /* Assets.xcassets in Resources */,
+				E54FB9362747E3E4001ECEA2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E54FB9422747E3E7001ECEA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E54FB94C2747E3E7001ECEA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E54FB9272747E3E4001ECEA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E54FB9332747E3E4001ECEA2 /* ViewController.swift in Sources */,
+				E54FB92F2747E3E4001ECEA2 /* AppDelegate.swift in Sources */,
+				E54FB9392747E3E4001ECEA2 /* CarfaxInterview.xcdatamodeld in Sources */,
+				E54FB9312747E3E4001ECEA2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E54FB9402747E3E7001ECEA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E54FB9492747E3E7001ECEA2 /* CarfaxInterviewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E54FB94A2747E3E7001ECEA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E54FB9532747E3E7001ECEA2 /* CarfaxInterviewUITests.swift in Sources */,
+				E54FB9552747E3E7001ECEA2 /* CarfaxInterviewUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E54FB9462747E3E7001ECEA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E54FB92A2747E3E4001ECEA2 /* CarfaxInterview */;
+			targetProxy = E54FB9452747E3E7001ECEA2 /* PBXContainerItemProxy */;
+		};
+		E54FB9502747E3E7001ECEA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E54FB92A2747E3E4001ECEA2 /* CarfaxInterview */;
+			targetProxy = E54FB94F2747E3E7001ECEA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E54FB9342747E3E4001ECEA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E54FB9352747E3E4001ECEA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E54FB93C2747E3E7001ECEA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E54FB93D2747E3E7001ECEA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E54FB9562747E3E7001ECEA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E54FB9572747E3E7001ECEA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E54FB9592747E3E7001ECEA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarfaxInterview/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhrumildesai.CarfaxInterview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E54FB95A2747E3E7001ECEA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarfaxInterview/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhrumildesai.CarfaxInterview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E54FB95C2747E3E7001ECEA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhrumildesai.CarfaxInterviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarfaxInterview.app/CarfaxInterview";
+			};
+			name = Debug;
+		};
+		E54FB95D2747E3E7001ECEA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhrumildesai.CarfaxInterviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarfaxInterview.app/CarfaxInterview";
+			};
+			name = Release;
+		};
+		E54FB95F2747E3E7001ECEA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhrumildesai.CarfaxInterviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarfaxInterview;
+			};
+			name = Debug;
+		};
+		E54FB9602747E3E7001ECEA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhrumildesai.CarfaxInterviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarfaxInterview;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E54FB9262747E3E4001ECEA2 /* Build configuration list for PBXProject "CarfaxInterview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E54FB9562747E3E7001ECEA2 /* Debug */,
+				E54FB9572747E3E7001ECEA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E54FB9582747E3E7001ECEA2 /* Build configuration list for PBXNativeTarget "CarfaxInterview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E54FB9592747E3E7001ECEA2 /* Debug */,
+				E54FB95A2747E3E7001ECEA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E54FB95B2747E3E7001ECEA2 /* Build configuration list for PBXNativeTarget "CarfaxInterviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E54FB95C2747E3E7001ECEA2 /* Debug */,
+				E54FB95D2747E3E7001ECEA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E54FB95E2747E3E7001ECEA2 /* Build configuration list for PBXNativeTarget "CarfaxInterviewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E54FB95F2747E3E7001ECEA2 /* Debug */,
+				E54FB9602747E3E7001ECEA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E54FB9372747E3E4001ECEA2 /* CarfaxInterview.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E54FB9382747E3E4001ECEA2 /* CarfaxInterview.xcdatamodel */,
+			);
+			currentVersion = E54FB9382747E3E4001ECEA2 /* CarfaxInterview.xcdatamodel */;
+			path = CarfaxInterview.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E54FB9232747E3E4001ECEA2 /* Project object */;
+}
