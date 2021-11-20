@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E520153C2748B1E2002ACE5D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E520153B2748B1E2002ACE5D /* SDWebImage */; };
+		E520153E2748B1E2002ACE5D /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E520153D2748B1E2002ACE5D /* SDWebImageMapKit */; };
 		E54FB92F2747E3E4001ECEA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FB92E2747E3E4001ECEA2 /* AppDelegate.swift */; };
 		E54FB9312747E3E4001ECEA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FB9302747E3E4001ECEA2 /* SceneDelegate.swift */; };
 		E54FB9332747E3E4001ECEA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54FB9322747E3E4001ECEA2 /* ViewController.swift */; };
@@ -64,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E520153E2748B1E2002ACE5D /* SDWebImageMapKit in Frameworks */,
+				E520153C2748B1E2002ACE5D /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +159,10 @@
 			dependencies = (
 			);
 			name = CarfaxInterview;
+			packageProductDependencies = (
+				E520153B2748B1E2002ACE5D /* SDWebImage */,
+				E520153D2748B1E2002ACE5D /* SDWebImageMapKit */,
+			);
 			productName = CarfaxInterview;
 			productReference = E54FB92B2747E3E4001ECEA2 /* CarfaxInterview.app */;
 			productType = "com.apple.product-type.application";
@@ -227,6 +235,9 @@
 				Base,
 			);
 			mainGroup = E54FB9222747E3E4001ECEA2;
+			packageReferences = (
+				E520153A2748B1E2002ACE5D /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = E54FB92C2747E3E4001ECEA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -636,6 +647,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E520153A2748B1E2002ACE5D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E520153B2748B1E2002ACE5D /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E520153A2748B1E2002ACE5D /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		E520153D2748B1E2002ACE5D /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E520153A2748B1E2002ACE5D /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E54FB9372747E3E4001ECEA2 /* CarfaxInterview.xcdatamodeld */ = {

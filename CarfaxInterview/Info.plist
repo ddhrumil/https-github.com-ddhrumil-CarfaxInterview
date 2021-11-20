@@ -3,9 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIconFiles</key>
-	<array>
-		<string>carfaxlogo.jpeg</string>
-	</array>
+	<array/>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

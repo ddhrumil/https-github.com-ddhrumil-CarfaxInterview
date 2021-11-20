@@ -27,6 +27,7 @@ class CollectionViewCell: UICollectionViewCell {
         
     }
     
+    
     //Code for calling the dealer
     @IBAction func CallDealer(_ sender: Any) {
         if let number = dealerNumber.titleLabel?.text {
