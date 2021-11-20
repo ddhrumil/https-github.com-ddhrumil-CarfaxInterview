@@ -63,7 +63,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                 if let json = try? (JSONSerialization.jsonObject(with: myData, options: []) as! Dictionary<String,Any>) {
                     if let myListings = json["listings"] as? Array<Dictionary<String,Any>> {
                         self.listings = myListings
-                        DispatchQueue.main.sync {
+                        DispatchQueue.main.async {
                             //print(self.listings)
                             self.collectionView.reloadData()
                         }
@@ -84,39 +84,31 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath) as! CollectionViewCell
         
-        //Displaying data to respective labels
-        if let make = row["make"] as? String {
-            cell.makeOutlet.text = make
-        }
-        
-        if let model = row["model"] as? String {
-            cell.modelOutlet.text = model
-        }
+        //Displaying data in respective labels
         if let year = row["year"] as? Int {
-            cell.yearOutlet.text = String(year)
-        }
-       
-        if let trim = row["trim"] as? String {
-            cell.trimOutlet.text = trim
-        }
-        
-        if let price = row["currentPrice"] as? Float {
-            cell.priceOutlet.text = "$" + String(price)
-        }
-        
-        if let mileage = row["mileage"] as? Float {
-            cell.mileageOutlet.text = String(mileage) + " Mi"
+            if let make = row["make"] as? String {
+                if let model = row["model"] as? String {
+                    if let trim = row["trim"] as? String {
+                        cell.carModelOutlet.text = ((String(year)) + "  " + make + "  " + model + "  |  " + trim)
+                    }
+                }
+            }
         }
 
-        if let dealer = row["dealer"] as? Dictionary<String,Any> {
-            let phoneNumber = dealer["phone"] as? String
-            cell.phoneOutlet.text = phoneNumber
-            
-            let stateLocation = dealer["state"] as? String
-            let cityLocation = dealer["city"] as? String
-            //print(cityLocation)
-            cell.locationOutlet.text = (cityLocation ?? "") + ", " + (stateLocation ?? "")
-            
+        
+        if let price = row["currentPrice"] as? Float {
+            if let mileage = row["mileage"] as? Float {
+                if let dealer = row["dealer"] as? Dictionary<String,Any> {
+                    let phoneNumber = dealer["phone"] as? String
+                    //print(phoneNumber)
+                    cell.dealerNumber.setTitle("+1" + (phoneNumber)!, for: .normal)
+                    
+                    let stateLocation = dealer["state"] as? String
+                    let cityLocation = dealer["city"] as? String
+                    
+                    cell.priceMiOutlet.text = ("$" + (String(price)) + "  |  " + (String(mileage) + " Mi") + "  |  " + (cityLocation ?? "") + ", " + (stateLocation ?? ""))
+                }
+            }
         }
         
         //Fetching image urls and displaying to image view
@@ -124,7 +116,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             print(images)
 
             if let firstPhoto = images["firstPhoto"] as? Dictionary<String,Any> {
-                let finalImgUrl = firstPhoto["large"] as? String
+                let finalImgUrl = firstPhoto["medium"] as? String
                 cell.imageOutlet.downloaded(from: finalImgUrl ?? "")
                 cell.imageOutlet.contentMode = .scaleAspectFill
             }
@@ -132,11 +124,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return cell
     }
     
+    
     //function for resizing cell width and cell height
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cellWidth = collectionView.frame.size.width
-        let cellHeight = collectionView.frame.size.height
-        return CGSize(width: cellWidth, height: cellHeight * 0.4)
+        return CGSize(width: collectionView.frame.size.width, height: 400)
     }
+     
 }
 

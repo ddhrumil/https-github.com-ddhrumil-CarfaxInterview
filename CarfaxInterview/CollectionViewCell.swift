@@ -13,20 +13,14 @@ class CollectionViewCell: UICollectionViewCell {
     //Outlets for respective data
 
     @IBOutlet weak var imageOutlet: UIImageView!
-    @IBOutlet weak var yearOutlet: UILabel!
     
-    @IBOutlet weak var makeOutlet: UILabel!
+    @IBOutlet weak var carModelOutlet: UILabel!
     
-    @IBOutlet weak var modelOutlet: UILabel!
-    
-    @IBOutlet weak var trimOutlet: UILabel!
-    @IBOutlet weak var priceOutlet: UILabel!
+    @IBOutlet weak var priceMiOutlet: UILabel!
     
 
-    @IBOutlet weak var locationOutlet: UILabel!
-    @IBOutlet weak var mileageOutlet: UILabel!
-    
-    @IBOutlet weak var phoneOutlet: UILabel!
+    @IBOutlet weak var dealerNumber: UIButton!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -35,10 +29,13 @@ class CollectionViewCell: UICollectionViewCell {
     
     //Code for calling the dealer
     @IBAction func CallDealer(_ sender: Any) {
-        if let url = URL(string: "tel://\(phoneOutlet.text!)"),
-        UIApplication.shared.canOpenURL(url) {
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        if let number = dealerNumber.titleLabel?.text {
+            if let url = URL(string: "tel://\(number)"),
+            UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
         }
+
     }
 }
     
